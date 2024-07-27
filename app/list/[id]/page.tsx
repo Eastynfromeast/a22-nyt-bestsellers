@@ -12,7 +12,7 @@ export default async function BookDetail({ params: { id } }: IParams) {
 
 	return (
 		<div>
-			<h1>{id} </h1>
+			<h1>{booksData === null ? id : booksData.results.list_name} </h1>
 			<ul>
 				{booksData.results.books.map((book: IBook, index: number) => (
 					<Book key={index} {...book} />

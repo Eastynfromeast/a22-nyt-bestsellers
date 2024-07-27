@@ -1,10 +1,10 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Source_Code_Pro } from "next/font/google";
 import "../styles/globals.css";
 import Header from "@/components/header";
 import styles from "@/styles/common.module.css";
 
-const inter = Inter({ subsets: ["latin"] });
+const sourceCodePro = Source_Code_Pro({ weight: ["400", "600"], style: ["normal", "italic"], subsets: ["latin"], display: "swap" });
 
 export const metadata: Metadata = {
 	title: {
@@ -20,10 +20,12 @@ export default function RootLayout({
 	children: React.ReactNode;
 }>) {
 	return (
-		<html lang="en" className={inter.className}>
-			<body className={styles.container}>
-				<Header />
-				{children}
+		<html lang="en" className={sourceCodePro.className}>
+			<body>
+				<div className={styles.container}>
+					<Header />
+					{children}
+				</div>
 			</body>
 		</html>
 	);
