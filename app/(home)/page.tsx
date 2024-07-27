@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { API_URL } from "../utils/constants";
 import { IGenre } from "../utils/type";
+import Genre from "@/components/genre";
 
 async function getGenres() {
 	const response = await fetch(API_URL);
@@ -15,9 +16,7 @@ export default async function Home() {
 		<div>
 			<h1>Newyork Times Best Sellers</h1>
 			{genres.map((genre: IGenre, index: number) => (
-				<li key={index}>
-					<Link href={`/list/${genre.list_name_encoded}`}>{genre.display_name}</Link>
-				</li>
+				<Genre key={index} {...genre} />
 			))}
 		</div>
 	);
