@@ -1,13 +1,6 @@
-import Link from "next/link";
-import { API_URL } from "../utils/constants";
+import { getGenres } from "../utils/fetcher";
 import { IGenre } from "../utils/type";
 import Genre from "@/components/genre";
-
-async function getGenres() {
-	const response = await fetch(API_URL);
-	const json = await response.json();
-	return json;
-}
 
 export default async function Home() {
 	const response = await getGenres();
