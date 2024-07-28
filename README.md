@@ -1,36 +1,32 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# A22 Nyt Best Seller
 
-## Getting Started
+[Check here!](https://a22-nyt-bestsellers-by-nulnu.vercel.app/)
 
-First, run the development server:
+## Challenge goals
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+    - 새로운 Next JS 프로젝트를 여러분 컴퓨터에 생성하세요.
+    - "뉴욕 타임즈 베스트셀러" 익스플로러를 빌드하세요.
+    - Vercel 로 배포하세요.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Requirement
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+    - Home Page (/): 베스트셀러 전체 리스트를 보여주세요.
+    - Detail Page (/list/[id]): 베스트셀러 각 카테고리별 책의 리스트를 보여주세요.
+    - About Page (/about): About 페이지 입니다.
+    - Layout Component 를 사용하세요.
+    - CSS Modules를 이용하여 예쁘게 꾸며주세요.
+    - Don't give up.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## 스크린샷
 
-## Learn More
+### Home page
 
-To learn more about Next.js, take a look at the following resources:
+![Screenshot 2024-07-28 at 5 21 20 PM](https://github.com/user-attachments/assets/2747e035-2f9f-46f4-9ce7-0c7bda8468f4)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Detail page
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+![Screenshot 2024-07-28 at 5 22 02 PM](https://github.com/user-attachments/assets/16421bb6-1028-4b4b-b21d-040c06ffd797)
 
-## Deploy on Vercel
+### About-us page
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+![Screenshot 2024-07-28 at 5 22 35 PM](https://github.com/user-attachments/assets/7d04644d-667b-489c-9bcb-bf55870d94df)
