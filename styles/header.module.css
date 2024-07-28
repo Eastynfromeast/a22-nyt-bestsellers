@@ -16,6 +16,10 @@
 	border-bottom: 1px dashed;
 }
 
+.navItem > a {
+	padding: 3px 5px;
+}
+
 .navDot {
 	display: inline-block;
 	vertical-align: middle;

@@ -10,11 +10,11 @@ export default function Header() {
 		<header className={styles.headerContainer}>
 			<nav className={styles.headerWrapper}>
 				<ul className={styles.navItems}>
-					<li>
+					<li className={styles.navItem}>
 						<Link href="/">Home</Link>
 						{path === "/" && <span className={styles.navDot}>dot</span>}
 					</li>
-					<li>
+					<li className={styles.navItem}>
 						{path === "/about-us" && <span className={styles.navDot}>dot</span>}
 						<Link href="/about-us">About Us</Link>
 					</li>
