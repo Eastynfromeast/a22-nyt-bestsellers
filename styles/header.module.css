@@ -23,7 +23,7 @@
 .navDot {
 	display: inline-block;
 	vertical-align: middle;
-	background-color: var(--accentBlue);
+	background-color: var(--accent_secondary);
 	width: 5px;
 	height: 5px;
 	border-radius: 5px;

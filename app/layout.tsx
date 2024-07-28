@@ -4,6 +4,7 @@ import Header from "@/components/header";
 import styles from "@/styles/common.module.css";
 import Footer from "@/components/footer";
 import { sourceCodePro } from "@/utils/font";
+import { ThemeProvider } from "next-themes";
 
 export const metadata: Metadata = {
 	title: {
@@ -21,9 +22,11 @@ export default function RootLayout({
 	return (
 		<html lang="en">
 			<body className={sourceCodePro.className}>
-				<Header />
-				<div className={styles.container}>{children}</div>
-				<Footer />
+				<ThemeProvider>
+					<Header />
+					<div className={styles.container}>{children}</div>
+					<Footer />
+				</ThemeProvider>
 			</body>
 		</html>
 	);

@@ -3,13 +3,18 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import styles from "@/styles/header.module.css";
+import ThemeSwitch from "./themeSwitch";
 
 export default function Header() {
 	const path = usePathname();
+
 	return (
 		<header className={styles.headerContainer}>
 			<nav className={styles.headerWrapper}>
 				<ul className={styles.navItems}>
+					<li>
+						<ThemeSwitch />
+					</li>
 					<li className={styles.navItem}>
 						<Link href="/">Home</Link>
 						{path === "/" && <span className={styles.navDot}>dot</span>}

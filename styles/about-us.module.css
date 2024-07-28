@@ -8,7 +8,7 @@
 	gap: 20px;
 	line-height: 2;
 	font-size: 20px;
-	color: var(--accentGreen);
+	color: var(--accent_primary);
 }
 
 .container h1 {

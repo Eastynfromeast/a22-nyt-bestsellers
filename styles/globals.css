@@ -131,10 +131,18 @@ table {
 
 :root {
 	--bgColor: #221f1f;
-	--white: #f3f3f3;
-	--accentGreen: #3ae374;
-	--accentBlue: #00a8ff;
-	--accentRed: #e22424;
+	--textColor: #f3f3f3;
+	--accent_primary: #3ae374;
+	--accent_secondary: #00a8ff;
+	--accent_error: #e22424;
+}
+
+[data-theme="light"] {
+	--bgColor: #f3f3f3;
+	--textColor: #221f1f;
+	--accent_primary: #004365;
+	--accent_secondary: #fa4800;
+	--accent_error: #e22424;
 }
 
 * {
@@ -143,7 +151,7 @@ table {
 
 body {
 	background-color: var(--bgColor);
-	color: var(--accentGreen);
+	color: var(--accent_primary);
 	font-size: 18px;
 }
 
@@ -154,6 +162,11 @@ a {
 }
 
 a:hover {
-	background-color: var(--accentGreen);
+	background-color: var(--accent_primary);
+	color: var(--bgColor);
+}
+
+[data-theme="light"] a:hover {
+	background-color: var(--accent_primary);
 	color: var(--bgColor);
 }

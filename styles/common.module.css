@@ -17,5 +17,5 @@
 .errorText {
 	font-size: 1.5em;
 	font-weight: 500;
-	color: var(--accentRed);
+	color: var(--accent_error);
 }

@@ -1,7 +1,7 @@
 .bookWrapper {
 	width: 100%;
-	border-top: 1px dashed var(--white);
-	border-bottom: 1px dashed var(--white);
+	border-top: 1px dashed var(--textColor);
+	border-bottom: 1px dashed var(--textColor);
 	transition: all 0.2s ease-in-out;
 	opacity: 0;
 	animation-name: appearing;
@@ -18,7 +18,7 @@
 	flex-direction: column;
 	gap: 5px;
 	padding: 40px 25px;
-	color: var(--white);
+	color: var(--textColor);
 }
 
 .book img {
@@ -52,19 +52,19 @@
 }
 
 .bookWrapper:hover {
-	border-top: 1px dashed var(--accentGreen);
-	border-bottom: 1px dashed var(--accentGreen);
+	border-top: 1px dashed var(--accent_primary);
+	border-bottom: 1px dashed var(--accent_primary);
 }
 
 .book:hover {
-	color: var(--accentGreen);
+	color: var(--accent_primary);
 }
 .book:hover img {
 	filter: grayscale(0);
 }
 .book:hover .rank {
 	font-weight: 600;
-	background-color: var(--accentGreen);
+	background-color: var(--accent_primary);
 	color: var(--bgColor);
 	opacity: 1;
 }
