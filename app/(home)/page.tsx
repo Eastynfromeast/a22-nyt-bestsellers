@@ -5,6 +5,10 @@ import styles from "@/styles/home.module.css";
 import PageTitle from "@/components/pageTitle";
 import { ThemeProvider } from "next-themes";
 
+export const metadata = {
+	title: "Home",
+};
+
 export default async function Home() {
 	const response = await getGenres();
 	const genres = response.results;

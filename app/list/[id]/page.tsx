@@ -8,6 +8,13 @@ interface IParams {
 	params: { id: string };
 }
 
+export async function generateMetadata({ params: { id } }: IParams) {
+	const booklist = await getGenreBookList(id);
+	return {
+		title: booklist.results.list_name,
+	};
+}
+
 export default async function BookDetail({ params: { id } }: IParams) {
 	const booksData: IBookDetail = await getGenreBookList(id);
 

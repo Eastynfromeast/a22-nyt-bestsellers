@@ -12,7 +12,7 @@ export default function ThemeSwitch() {
 
 	useEffect(() => {
 		global.window.__onThemeChange = setTheme;
-	}, []);
+	}, [theme]);
 
 	return (
 		<div className={styles.switchWrapper}>

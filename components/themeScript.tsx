@@ -1,4 +1,4 @@
-type Theme = "light" | "system";
+type Theme = "system" | "light";
 
 declare global {
 	interface Window {
@@ -32,7 +32,7 @@ function code() {
 		} catch (err) {}
 	};
 
-	var darkQuery = window.matchMedia("(prefers-color-scheme: dark)");
+	var darkQuery = window.matchMedia("(prefers-color-scheme: system)");
 
 	darkQuery.addEventListener("change", function (e) {
 		window.__setPreferredTheme(e.matches ? "system" : "light");
