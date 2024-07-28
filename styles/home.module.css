@@ -5,3 +5,9 @@
 	justify-items: start;
 	grid-gap: 15px;
 }
+
+@media screen and (max-width: 480px) {
+	.grid {
+		grid-template-columns: 1fr;
+	}
+}

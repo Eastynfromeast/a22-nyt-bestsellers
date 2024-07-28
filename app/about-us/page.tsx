@@ -1,8 +1,27 @@
+"use client";
+
+import Typewriter from "typewriter-effect";
+import styles from "@/styles/about-us.module.css";
+
+const aboutUsTitle = "About Us";
+
+const aboutUsText = `Welcome to Nulnu's explorer for The New York Times Best Seller list. <br/>We hope you find the book that makes your heart starts beating faster!`;
+
 export default function AboutUs() {
 	return (
-		<div>
-			<h1>About Us</h1>
-			<p>Welcome to Nulnu's explorer for The New York Times Best Seller list. We hope you find the book that makes your heart starts beating faster!</p>
+		<div className={styles.container}>
+			<Typewriter
+				options={{
+					strings: aboutUsTitle,
+					autoStart: true,
+					loop: false,
+				}}
+			/>
+			<Typewriter
+				onInit={typewriter => {
+					typewriter.typeString(aboutUsText).pauseFor(1500).start();
+				}}
+			/>
 		</div>
 	);
 }
