@@ -21,12 +21,24 @@
 
 ### Home page
 
-![Screenshot 2024-07-28 at 5 21 20 PM](https://github.com/user-attachments/assets/2747e035-2f9f-46f4-9ce7-0c7bda8468f4)
+- 다크 모드
+  ![Screenshot 2024-07-28 at 6 11 04 PM](https://github.com/user-attachments/assets/54c94bd7-e625-437f-b1c7-e29b419ffbd6)
+
+- 라이트 모드
+  ![Screenshot 2024-07-28 at 6 10 59 PM](https://github.com/user-attachments/assets/45452714-518b-4396-813e-0d0f5d2cbe9b)
 
 ### Detail page
 
-![Screenshot 2024-07-28 at 5 22 02 PM](https://github.com/user-attachments/assets/16421bb6-1028-4b4b-b21d-040c06ffd797)
+- 다크 모드
+  ![Screenshot 2024-07-28 at 6 11 51 PM](https://github.com/user-attachments/assets/c2b31181-cf51-4068-a550-3ffa5abe3154)
+
+- 라이트 모드
+  ![Screenshot 2024-07-28 at 6 11 46 PM](https://github.com/user-attachments/assets/dde3fd4d-e4d3-4890-af7a-d74b7fd65b9f)
 
 ### About-us page
 
-![Screenshot 2024-07-28 at 5 22 35 PM](https://github.com/user-attachments/assets/7d04644d-667b-489c-9bcb-bf55870d94df)
+- 다크 모드
+  ![Screenshot 2024-07-28 at 6 11 29 PM](https://github.com/user-attachments/assets/f438f537-de43-406c-8ebc-5fca6966a670)
+
+- 라이트 모드
+  ![Screenshot 2024-07-28 at 6 11 35 PM](https://github.com/user-attachments/assets/7641177c-d1a0-424e-b8d2-320bd8a0b7c2)
