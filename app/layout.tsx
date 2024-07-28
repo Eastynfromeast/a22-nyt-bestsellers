@@ -5,6 +5,7 @@ import styles from "@/styles/common.module.css";
 import Footer from "@/components/footer";
 import { sourceCodePro } from "@/utils/font";
 import { ThemeProvider } from "next-themes";
+import ThemeScript from "@/components/themeScript";
 
 export const metadata: Metadata = {
 	title: {
@@ -20,13 +21,14 @@ export default function RootLayout({
 	children: React.ReactNode;
 }>) {
 	return (
-		<html lang="en">
+		<html lang="en" suppressHydrationWarning>
+			<head>
+				<ThemeScript />
+			</head>
 			<body className={sourceCodePro.className}>
-				<ThemeProvider>
-					<Header />
-					<div className={styles.container}>{children}</div>
-					<Footer />
-				</ThemeProvider>
+				<Header />
+				<div className={styles.container}>{children}</div>
+				<Footer />
 			</body>
 		</html>
 	);

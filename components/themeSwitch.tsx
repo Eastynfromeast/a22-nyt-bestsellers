@@ -1,20 +1,23 @@
-import { useTheme } from "next-themes";
+"use client";
+
 import styles from "@/styles/theme-switch.module.css";
+import { useEffect, useState } from "react";
 
 export default function ThemeSwitch() {
-	const { theme, setTheme } = useTheme();
-	const onClickThemeSwitch = () => {
-		if (theme === "system") {
-			setTheme("light");
-		} else {
-			setTheme("system");
-		}
+	const [theme, setTheme] = useState(global.window?.__theme || "light");
+	const isDark = theme === "system";
+	const toggleTheme = () => {
+		global.window?.__setPreferredTheme(isDark ? "light" : "system");
 	};
+
+	useEffect(() => {
+		global.window.__onThemeChange = setTheme;
+	}, []);
 
 	return (
 		<div className={styles.switchWrapper}>
-			<button className={styles.btn} onClick={onClickThemeSwitch}>
-				<span>{theme === "system" ? "dark" : theme}</span>
+			<button className={styles.btn} onClick={toggleTheme}>
+				<span>{theme}</span>
 				{theme === "light" ? "☀️" : "🌙"}
 			</button>
 		</div>
