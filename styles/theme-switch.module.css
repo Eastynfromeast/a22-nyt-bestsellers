@@ -1,0 +1,29 @@
+.switchWrapper {
+	transition: all 0.2s ease-in-out;
+	cursor: pointer;
+}
+
+.btn {
+	border: none;
+	background: none;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 3px;
+	color: inherit;
+	font-family: inherit;
+	font-size: 0.9em;
+	transition: all 0.2s ease-in-out;
+	min-width: 85px;
+}
+
+.btn span {
+	display: inline-block;
+	margin-right: 5px;
+	text-transform: capitalize;
+}
+
+.btn:hover {
+	background-color: var(--accent_primary);
+	color: var(--bgColor);
+}
