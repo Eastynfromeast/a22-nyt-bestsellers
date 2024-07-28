@@ -16,7 +16,7 @@ export default async function BookDetail({ params: { id } }: IParams) {
 			<PageTitle title={booksData === null ? id : booksData.results.list_name} />
 			<ul>
 				{booksData.results.books.map((book: IBook, index: number) => (
-					<Book key={index} {...book} />
+					<Book key={index} {...book} animationDelay={`${index * 0.2 + 1.5}s`} />
 				))}
 			</ul>
 		</div>

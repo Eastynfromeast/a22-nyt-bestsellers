@@ -12,7 +12,6 @@ export default function Error({ error, reset }: { error: Error & { digest?: stri
 		<div className={styles.container}>
 			<h2 className={styles.errorText}>Something went wrong!</h2>
 			<p>Please go back and try again!</p>
-			<button onClick={() => reset()}>Try again!</button>
 		</div>
 	);
 }

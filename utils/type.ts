@@ -7,9 +7,7 @@ export interface IGenre {
 	updated: string;
 }
 
-export interface IGenreProps {
-	display_name: string;
-	list_name_encoded: string;
+export interface IGenreProps extends IGenre {
 	animationDelay: string;
 }
 
