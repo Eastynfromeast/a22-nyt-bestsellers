@@ -32,13 +32,13 @@ function code() {
 		} catch (err) {}
 	};
 
-	var darkQuery = window.matchMedia("(prefers-color-scheme: system)");
+	var lightQuery = window.matchMedia("(prefers-color-scheme: light)");
 
-	darkQuery.addEventListener("change", function (e) {
-		window.__setPreferredTheme(e.matches ? "system" : "light");
+	lightQuery.addEventListener("change", function (e) {
+		window.__setPreferredTheme(e.matches ? "light" : "system");
 	});
 
-	setTheme(preferredTheme || (darkQuery.matches ? "system" : "light"));
+	setTheme(preferredTheme || (lightQuery.matches ? "light" : "system"));
 }
 
 export default function ThemeScript() {
