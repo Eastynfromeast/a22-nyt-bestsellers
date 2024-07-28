@@ -1,7 +1,6 @@
 import { getGenres } from "../../utils/fetcher";
 import { IGenre } from "../../utils/type";
 import Genre from "@/components/genre";
-import { pressStart2p } from "@/utils/font";
 import styles from "@/styles/home.module.css";
 import PageTitle from "@/components/pageTitle";
 

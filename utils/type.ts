@@ -39,6 +39,10 @@ export interface IBook {
 	book_uri: string;
 }
 
+export interface IBookProps extends IBook {
+	animationDelay: string;
+}
+
 export interface IBookDetail {
 	status: string;
 	copyright: string;

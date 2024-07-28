@@ -1,9 +1,5 @@
-import { IBook } from "@/utils/type";
+import { IBookProps } from "@/utils/type";
 import styles from "@/styles/book.module.css";
-
-interface IBookProps extends IBook {
-	animationDelay: string;
-}
 
 export default function Book({ title, author, rank, book_image, amazon_product_url, animationDelay }: IBookProps) {
 	return (
