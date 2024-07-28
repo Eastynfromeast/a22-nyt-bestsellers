@@ -1,0 +1,54 @@
+.bookWrapper {
+	border-top: 1px dashed var(--white);
+	border-bottom: 1px dashed var(--white);
+	transition: all 0.2s ease-in-out;
+}
+
+.book {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	gap: 5px;
+	padding: 40px 25px;
+	color: var(--white);
+}
+
+.book img {
+	width: 100%;
+	filter: grayscale(0.75);
+	transition: filter 0.2s ease-in-out;
+}
+
+.cover {
+	overflow: hidden;
+	width: 100%;
+	max-height: 350px;
+}
+
+.book h3 {
+	font-size: 1.1em;
+	padding: 5px 0;
+	min-height: 35px;
+}
+
+.bookWrapper:hover {
+	border-top: 1px dashed var(--accentGreen);
+	border-bottom: 1px dashed var(--accentGreen);
+}
+
+.book:hover {
+	color: var(--accentGreen);
+}
+.book:hover img {
+	filter: grayscale(0);
+}
+
+.buyBtn {
+	display: block;
+	width: 100%;
+	margin-top: 20px;
+	border: 1px solid;
+	text-align: center;
+	padding: 7px 10px;
+	text-transform: uppercase;
+}

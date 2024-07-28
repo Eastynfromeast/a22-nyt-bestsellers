@@ -26,3 +26,9 @@
 	margin: 0 7px;
 	font-size: 0;
 }
+
+@media screen and (max-width: 480px) {
+	.headerContainer {
+		margin-bottom: 20px;
+	}
+}

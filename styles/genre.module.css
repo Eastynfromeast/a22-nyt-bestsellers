@@ -16,4 +16,9 @@
 	animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
 	animation-fill-mode: forwards;
 	animation-iteration-count: 1;
+	padding: 3px;
+}
+
+.genre > a {
+	padding: 3px 5px;
 }

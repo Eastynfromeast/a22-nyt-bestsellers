@@ -2,6 +2,7 @@
 
 import Typewriter from "typewriter-effect";
 import styles from "@/styles/about-us.module.css";
+import PageTitle from "@/components/pageTitle";
 
 const aboutUsTitle = "About Us";
 
@@ -10,13 +11,7 @@ const aboutUsText = `Welcome to Nulnu's explorer for The New York Times Best Sel
 export default function AboutUs() {
 	return (
 		<div className={styles.container}>
-			<Typewriter
-				options={{
-					strings: aboutUsTitle,
-					autoStart: true,
-					loop: false,
-				}}
-			/>
+			<PageTitle title="About Us" />
 			<Typewriter
 				onInit={typewriter => {
 					typewriter.typeString(aboutUsText).pauseFor(2000).start();
