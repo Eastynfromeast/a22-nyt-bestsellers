@@ -1,6 +1,5 @@
-import { API_URL } from "@/app/utils/constants";
-import { getGenreBookList } from "@/app/utils/fetcher";
-import { IBook, IBookDetail } from "@/app/utils/type";
+import { getGenreBookList } from "@/utils/fetcher";
+import { IBook, IBookDetail } from "@/utils/type";
 import Book from "@/components/book";
 
 interface IParams {

@@ -20,8 +20,8 @@ export default function RootLayout({
 	children: React.ReactNode;
 }>) {
 	return (
-		<html lang="en" className={sourceCodePro.className}>
-			<body>
+		<html lang="en">
+			<body className={sourceCodePro.className}>
 				<div className={styles.container}>
 					<Header />
 					{children}

@@ -1,4 +1,4 @@
-import { IGenre } from "@/app/utils/type";
+import { IGenre } from "@/utils/type";
 import Link from "next/link";
 
 export default function Genre({ display_name, list_name_encoded }: IGenre) {
