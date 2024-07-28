@@ -7,6 +7,12 @@ export interface IGenre {
 	updated: string;
 }
 
+export interface IGenreProps {
+	display_name: string;
+	list_name_encoded: string;
+	animationDelay: string;
+}
+
 export interface IGetGenre {
 	status: string;
 	copyright: string;
