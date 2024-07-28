@@ -14,16 +14,14 @@ export default async function Home() {
 	const genres = response.results;
 	return (
 		<>
-			<ThemeProvider>
-				<div className={styles.container}>
-					<PageTitle title="Newyork Times Best Sellers" />
-					<ul className={styles.grid}>
-						{genres.map((genre: IGenre, index: number) => (
-							<Genre animationDelay={`${index * 0.2}s`} key={index} {...genre} />
-						))}
-					</ul>
-				</div>
-			</ThemeProvider>
+			<div className={styles.container}>
+				<PageTitle title="Newyork Times Best Sellers" />
+				<ul className={styles.grid}>
+					{genres.map((genre: IGenre, index: number) => (
+						<Genre animationDelay={`${index * 0.2}s`} key={index} {...genre} />
+					))}
+				</ul>
+			</div>
 		</>
 	);
 }

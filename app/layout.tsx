@@ -6,6 +6,7 @@ import Footer from "@/components/footer";
 import { sourceCodePro } from "@/utils/font";
 import { ThemeProvider } from "next-themes";
 import ThemeScript from "@/components/themeScript";
+import Provider from "@/components/provider";
 
 export const metadata: Metadata = {
 	title: {
@@ -21,14 +22,16 @@ export default function RootLayout({
 	children: React.ReactNode;
 }>) {
 	return (
-		<html lang="en" suppressHydrationWarning>
+		<html lang="en">
 			<head>
 				<ThemeScript />
 			</head>
 			<body className={sourceCodePro.className}>
-				<Header />
-				<div className={styles.container}>{children}</div>
-				<Footer />
+				<Provider>
+					<Header />
+					<div className={styles.container}>{children}</div>
+					<Footer />
+				</Provider>
 			</body>
 		</html>
 	);
