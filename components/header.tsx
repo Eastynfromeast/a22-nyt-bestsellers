@@ -20,8 +20,8 @@ export default function Header() {
 						{path === "/" && <span className={styles.navDot}>dot</span>}
 					</li>
 					<li className={styles.navItem}>
-						{path === "/about-us" && <span className={styles.navDot}>dot</span>}
 						<Link href="/about-us">About Us</Link>
+						{path === "/about-us" && <span className={styles.navDot}>dot</span>}
 					</li>
 				</ul>
 			</nav>
