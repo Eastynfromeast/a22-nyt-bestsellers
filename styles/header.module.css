@@ -1,4 +1,9 @@
-.header {
+.headerContainer {
+	padding: 0 15px;
+	margin-bottom: 30px;
+}
+
+.headerWrapper {
 	width: 100%;
 }
 
@@ -7,9 +12,8 @@
 	flex-direction: row;
 	align-items: center;
 	justify-content: space-between;
-	padding: 10px 15px;
-	border-bottom: 1px solid #a6a6a6;
-	margin-bottom: 20px;
+	padding: 15px;
+	border-bottom: 1px dashed;
 }
 
 .navDot {

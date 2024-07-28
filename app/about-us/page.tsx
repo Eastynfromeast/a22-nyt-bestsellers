@@ -19,7 +19,7 @@ export default function AboutUs() {
 			/>
 			<Typewriter
 				onInit={typewriter => {
-					typewriter.typeString(aboutUsText).pauseFor(1500).start();
+					typewriter.typeString(aboutUsText).pauseFor(2000).start();
 				}}
 			/>
 		</div>

@@ -1,10 +1,9 @@
 import type { Metadata } from "next";
-import { Source_Code_Pro } from "next/font/google";
 import "../styles/globals.css";
 import Header from "@/components/header";
 import styles from "@/styles/common.module.css";
-
-const sourceCodePro = Source_Code_Pro({ weight: ["400", "600"], style: ["normal", "italic"], subsets: ["latin"], display: "swap" });
+import Footer from "@/components/footer";
+import { sourceCodePro } from "@/utils/font";
 
 export const metadata: Metadata = {
 	title: {
@@ -22,10 +21,9 @@ export default function RootLayout({
 	return (
 		<html lang="en">
 			<body className={sourceCodePro.className}>
-				<div className={styles.container}>
-					<Header />
-					{children}
-				</div>
+				<Header />
+				<div className={styles.container}>{children}</div>
+				<Footer />
 			</body>
 		</html>
 	);

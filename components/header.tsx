@@ -7,8 +7,8 @@ import styles from "@/styles/header.module.css";
 export default function Header() {
 	const path = usePathname();
 	return (
-		<header>
-			<nav className={styles.header}>
+		<header className={styles.headerContainer}>
+			<nav className={styles.headerWrapper}>
 				<ul className={styles.navItems}>
 					<li>
 						<Link href="/">Home</Link>
